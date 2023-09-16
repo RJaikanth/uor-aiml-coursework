@@ -1,0 +1,7 @@
+name: RobustScaler
+kwargs:
+  with_centering: true
+  with_scaling: true
+  quantile_range: !!python/tuple [ 25.0, 75.0 ]
+  copy: true
+  unit_variance: false

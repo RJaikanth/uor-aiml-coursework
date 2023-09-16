@@ -1,0 +1,5 @@
+name: OrdinalEncoding
+kwargs:
+  categories: auto
+  handle_unknown: use_encoded_value
+  unknown_value: -1

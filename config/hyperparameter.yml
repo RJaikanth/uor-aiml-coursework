@@ -1,0 +1,5 @@
+experiment_file: ./config/RandomForest/conf5.yml
+
+hp_args:
+    regressor__n_estimators: !!python/tuple [ 400, 1000, 100 ]
+    regressor__max_depth: !!python/tuple [ 2, 10, 2 ]

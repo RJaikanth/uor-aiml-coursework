@@ -1,0 +1,8 @@
+name: OneHotEncoding
+kwargs:
+  categories: auto
+  drop: null
+  sparse_output: false
+  handle_unknown: ignore
+  min_frequency: null
+  max_categories: null

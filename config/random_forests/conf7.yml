@@ -1,0 +1,29 @@
+data: config/data/data_config.yml
+
+preprocess:
+  numerical:
+    conf_path: config/preprocessing/robust_scaler.yml
+    cols:
+      - powerPS
+      - kilometer
+      - age_of_car
+
+  categorical:
+    conf_path: config/preprocessing/ordinal_encoder.yml
+    cols:
+      - abtest
+      - vehicleType
+      - gearbox
+      - model
+      - fuelType
+      - brand
+
+  target:
+    conf_path: config/preprocessing/standard_scaler.yml
+
+model:
+  name: RandomForest
+  kwargs:
+    n_jobs: 6
+    verbose: 1
+    random_state: 42

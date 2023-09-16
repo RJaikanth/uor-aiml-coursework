@@ -1,0 +1,5 @@
+name: StandardScaler
+kwargs:
+  with_mean: true
+  with_std: true
+  copy: true

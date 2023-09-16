@@ -1,0 +1,32 @@
+data: config/data/data_config.yml
+
+preprocess:
+  numerical:
+    conf_path: config/preprocessing/standard_scaler.yml
+    cols:
+      - powerPS
+      - kilometer
+      - age_of_car
+
+  categorical:
+    conf_path: config/preprocessing/ordinal_encoder.yml
+    cols:
+      - abtest
+      - vehicleType
+      - gearbox
+      - model
+      - fuelType
+      - brand
+
+  target:
+    conf_path: config/preprocessing/robust_scaler.yml
+
+model:
+  name: FeedForward
+  kwargs:
+    layers:
+      - 30
+      - 50
+      - 30
+    num_outputs: 1
+  num_epochs: 10
